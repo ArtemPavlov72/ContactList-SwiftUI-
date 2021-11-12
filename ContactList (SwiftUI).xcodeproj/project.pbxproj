@@ -12,6 +12,7 @@
 		88907120273EE61500FEFBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8890711F273EE61500FEFBCD /* Assets.xcassets */; };
 		88907123273EE61500FEFBCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88907122273EE61500FEFBCD /* Preview Assets.xcassets */; };
 		8890712A273EE86E00FEFBCD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88907129273EE86E00FEFBCD /* DataManager.swift */; };
+		8890712D273EEE5D00FEFBCD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890712C273EEE5D00FEFBCD /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		8890711F273EE61500FEFBCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88907122273EE61500FEFBCD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88907129273EE86E00FEFBCD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8890712C273EEE5D00FEFBCD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				8890711B273EE61300FEFBCD /* ContactList__SwiftUI_App.swift */,
 				8890711D273EE61300FEFBCD /* ContentView.swift */,
+				8890712E273EEE6600FEFBCD /* Models */,
 				8890712B273EE87C00FEFBCD /* Services */,
 				8890711F273EE61500FEFBCD /* Assets.xcassets */,
 				88907121273EE61500FEFBCD /* Preview Content */,
@@ -76,6 +79,14 @@
 				88907129273EE86E00FEFBCD /* DataManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		8890712E273EEE6600FEFBCD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8890712C273EEE5D00FEFBCD /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			files = (
 				8890711E273EE61300FEFBCD /* ContentView.swift in Sources */,
 				8890712A273EE86E00FEFBCD /* DataManager.swift in Sources */,
+				8890712D273EEE5D00FEFBCD /* Person.swift in Sources */,
 				8890711C273EE61300FEFBCD /* ContactList__SwiftUI_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
