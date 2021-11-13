@@ -45,19 +45,11 @@ extension Person {
     
     static func getContactList() -> [Person] {
         var persons: [Person] = []
-        for _ in 1...25 {
+        for _ in 1...16 {
             let person: Person = getContact()
             persons.append(person)
         }
         return persons
     }
-    
-//    static func getContact() -> Person {
-  //      getContact()(Int.random(in: 1...16))
-//16    }
 }
 
-enum Contacts: String {
-    case phone = "phone" //название кнопочек, которые используем на втором экране
-    case email = "tray" //название кнопочек
-}
