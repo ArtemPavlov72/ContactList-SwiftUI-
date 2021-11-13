@@ -11,14 +11,15 @@ struct ContactsList: View {
     let personInfo = Person.getContactList()
     
     var body: some View {
-        List(personInfo) {person in
-            NavigationLink(destination: PersonInformation(contact: person)) {
-                ContactRow(contact: person)
+        NavigationView {
+            List(personInfo) {person in
+                NavigationLink(destination: PersonInformation(contact: person)) {
+                    ContactRow(contact: person)
+                }
             }
+            .listStyle(.plain)
+            .navigationTitle("Contact List")
         }
-        .listStyle(.plain)
-        
-        
     }
 }
 

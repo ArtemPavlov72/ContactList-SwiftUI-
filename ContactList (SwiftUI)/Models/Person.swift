@@ -8,7 +8,7 @@
 import SwiftUI
 
 class Person: NSObject, Identifiable {
-   // let id: Int
+  
     let name: String
     let secondName: String
     let numberPhone: String

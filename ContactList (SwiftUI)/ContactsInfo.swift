@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct ContactsInfo: View {
+    let personInfo = Person.getContactList()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List() {
+                ForEach(personInfo) { person in
+                    Section(header: Text("\(person.fullName)")) {
+                        HStack{
+                            Image(systemName: "phone")
+                            Text("\(person.numberPhone)")
+                        }
+                        HStack{
+                            Image(systemName: "tray")
+                            Text("\(person.email)")
+                        }
+                    }
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle("Contact Info")
+        }
+        
     }
 }
 
