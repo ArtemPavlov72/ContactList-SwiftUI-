@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct ContactsList: View {
-    let personInfo: [Person]
+    let personInfo = Person.getContactList()
     
     var body: some View {
         List(personInfo) {person in
-            ContactRow(contact: person)
+            NavigationLink(destination: PersonInformation(contact: person)) {
+                ContactRow(contact: person)
+            }
         }
-            .listStyle(.plain)
+        .listStyle(.plain)
         
         
     }
@@ -22,6 +24,6 @@ struct ContactsList: View {
 
 struct ContactsList_Previews: PreviewProvider {
     static var previews: some View {
-        ContactsList(personInfo: Person.getContactList())
+        ContactsList()
     }
 }

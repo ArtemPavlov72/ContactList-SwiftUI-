@@ -8,15 +8,10 @@
 import SwiftUI
 
 struct PersonInformation: View {
-    let person: Person
+    let contact: Person
     
     var body: some View {
         VStack {
-            HStack {
-                Text("\(person.fullName)")
-                    .font(.largeTitle.bold())
-                Spacer()
-            }
             Image(systemName: "person.circle")
                 .resizable()
                 .frame(width: 230, height: 230)
@@ -24,7 +19,7 @@ struct PersonInformation: View {
                 Image(systemName: "phone")
                     .resizable()
                     .frame(width: 30, height: 30)
-                Text("\(person.numberPhone)")
+                Text("\(contact.numberPhone)")
                     .font(.title)
                 Spacer()
             }
@@ -32,17 +27,19 @@ struct PersonInformation: View {
                 Image(systemName: "tray")
                     .resizable()
                     .frame(width: 30, height: 30)
-                Text("\(person.email)")
+                Text("\(contact.email)")
                     .font(.title)
                 Spacer()
             }
             Spacer()
         }
+        .padding()
+        .navigationTitle("\(contact.fullName)")
     }
 }
 
 struct PersonInformation_Previews: PreviewProvider {
     static var previews: some View {
-        PersonInformation(person: Person.getContact())
+        PersonInformation(contact: Person.getContact())
     }
 }

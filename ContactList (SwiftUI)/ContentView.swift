@@ -9,17 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            ContactsList(personInfo: Person.getContactList())
-                .tabItem {
-                    Image(systemName: "person.circle.fill")
-                    Text("Contact List")
-                }
-            ContactsInfo()
-                .tabItem {
-                    Image(systemName: "person.crop.square.fill.and.at.rectangle")
-                    Text("Contact Info")
-                }
+        NavigationView {
+            TabView {
+                ContactsList()
+                    .tabItem {
+                        Image(systemName: "person.circle.fill")
+                        Text("Contact List")
+                    }
+                ContactsInfo()
+                    .tabItem {
+                        Image(systemName: "person.crop.square.fill.and.at.rectangle")
+                        Text("Contact Info")
+                    }
+            }
         }
     }
 }
