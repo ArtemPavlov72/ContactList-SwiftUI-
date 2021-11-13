@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-class Person: NSObject {
+class Person: NSObject, Identifiable {
+   // let id: Int
     let name: String
     let secondName: String
     let numberPhone: String
@@ -41,6 +42,19 @@ extension Person {
         
         return newPerson
     }
+    
+    static func getContactList() -> [Person] {
+        var persons: [Person] = []
+        for _ in 1...25 {
+            let person: Person = getContact()
+            persons.append(person)
+        }
+        return persons
+    }
+    
+//    static func getContact() -> Person {
+  //      getContact()(Int.random(in: 1...16))
+//16    }
 }
 
 enum Contacts: String {

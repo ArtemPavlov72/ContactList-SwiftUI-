@@ -63,9 +63,9 @@
 			children = (
 				8890711B273EE61300FEFBCD /* ContactList__SwiftUI_App.swift */,
 				8890711D273EE61300FEFBCD /* ContentView.swift */,
-				8894CF1A273F920D00FEF98A /* ContactRow.swift */,
 				8890712F273EF29D00FEFBCD /* ContactsList.swift */,
 				88907131273EF2B600FEFBCD /* ContactsInfo.swift */,
+				8894CF1A273F920D00FEF98A /* ContactRow.swift */,
 				8890712E273EEE6600FEFBCD /* Models */,
 				8890712B273EE87C00FEFBCD /* Services */,
 				8890711F273EE61500FEFBCD /* Assets.xcassets */,
