@@ -7,23 +7,52 @@
 
 import SwiftUI
 
-class Person: NSObject, Identifiable {
-  
+struct Person: Identifiable {
+    var id: Int
     let name: String
     let secondName: String
     let numberPhone: String
     let email: String
-    let fullName: String
     
-    init(name: String, secondName: String, numberPhone: String, email: String, fullName: String) {
-        self.name = name
-        self.secondName = secondName
-        self.numberPhone = numberPhone
-        self.email = email
-        self.fullName = fullName
+    var fullName: String {
+        "\(name) \(secondName)"
     }
 }
 
+extension Person {
+    static func getContactList() -> [Person] {
+        
+        var persons: [Person] = []
+        
+        let names = DataManager.shared.realNames.shuffled()
+        let secondsNames = DataManager.shared.realSecondNames.shuffled()
+        let phoneNumbers = DataManager.shared.realNumbersPhones.shuffled()
+        let emails = DataManager.shared.realEmails.shuffled()
+        
+        
+        let iterationCount = min(
+            names.count,
+            secondsNames.count,
+            phoneNumbers.count,
+            emails.count
+        )
+        
+        for index in 0..<iterationCount {
+            var idPerson = 0
+            let person = Person(
+                id: idPerson + 1,
+                name: names[index],
+                secondName: secondsNames[index],
+                numberPhone: phoneNumbers[index],
+                email: emails[index]
+            )
+            idPerson += 1
+            persons.append(person)
+        }
+     return persons
+    }
+}
+/*
 extension Person {
     static func getContact() -> Person {
         
@@ -52,4 +81,5 @@ extension Person {
         return persons
     }
 }
+ */
 
