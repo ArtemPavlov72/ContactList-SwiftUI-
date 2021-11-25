@@ -9,14 +9,15 @@ import SwiftUI
 
 struct ContactsList: View {
     
-    @Binding var persons: [Person]
+    let persons: [Person]
     
     var body: some View {
         NavigationView {
-            List(persons) {person in
-                NavigationLink(destination: PersonInformation(contact: person)) {
-                    ContactRow(contact: person)
-                }
+            List(persons) {person in //делаем табличку, куда передаем массив
+                NavigationLink(
+                    person.fullName,
+                    destination: PersonInformation(contact: person)
+                )
             }
             .listStyle(.plain)
             .navigationTitle("Contact List")
