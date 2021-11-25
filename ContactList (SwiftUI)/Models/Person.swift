@@ -17,9 +17,7 @@ struct Person: Identifiable {
     var fullName: String {
         "\(name) \(secondName)"
     }
-}
-
-extension Person {
+    
     static func getContactList() -> [Person] {
         
         var persons: [Person] = []
@@ -49,4 +47,5 @@ extension Person {
         return persons
     }
 }
+
 
