@@ -15,7 +15,6 @@
 		8890712D273EEE5D00FEFBCD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890712C273EEE5D00FEFBCD /* Person.swift */; };
 		88907130273EF29D00FEFBCD /* ContactsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890712F273EF29D00FEFBCD /* ContactsList.swift */; };
 		88907132273EF2B600FEFBCD /* ContactsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88907131273EF2B600FEFBCD /* ContactsInfo.swift */; };
-		8894CF1B273F920D00FEF98A /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8894CF1A273F920D00FEF98A /* ContactRow.swift */; };
 		8894CF1D273FB27200FEF98A /* PersonInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8894CF1C273FB27200FEF98A /* PersonInformation.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +28,6 @@
 		8890712C273EEE5D00FEFBCD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		8890712F273EF29D00FEFBCD /* ContactsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsList.swift; sourceTree = "<group>"; };
 		88907131273EF2B600FEFBCD /* ContactsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsInfo.swift; sourceTree = "<group>"; };
-		8894CF1A273F920D00FEF98A /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
 		8894CF1C273FB27200FEF98A /* PersonInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInformation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +66,6 @@
 				8890712F273EF29D00FEFBCD /* ContactsList.swift */,
 				8894CF1C273FB27200FEF98A /* PersonInformation.swift */,
 				88907131273EF2B600FEFBCD /* ContactsInfo.swift */,
-				8894CF1A273F920D00FEF98A /* ContactRow.swift */,
 				8890712E273EEE6600FEFBCD /* Models */,
 				8890712B273EE87C00FEFBCD /* Services */,
 				8890711F273EE61500FEFBCD /* Assets.xcassets */,
@@ -176,7 +173,6 @@
 				88907132273EF2B600FEFBCD /* ContactsInfo.swift in Sources */,
 				8890712A273EE86E00FEFBCD /* DataManager.swift in Sources */,
 				8890712D273EEE5D00FEFBCD /* Person.swift in Sources */,
-				8894CF1B273F920D00FEF98A /* ContactRow.swift in Sources */,
 				8890711C273EE61300FEFBCD /* ContactList__SwiftUI_App.swift in Sources */,
 				8894CF1D273FB27200FEF98A /* PersonInformation.swift in Sources */,
 			);
