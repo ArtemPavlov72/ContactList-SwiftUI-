@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            ContactsList(personsList: $personsList)
+            ContactsList(personsList: personsList)
                 .tabItem {
                     Image(systemName: "person.circle.fill")
                     Text("Contact List")

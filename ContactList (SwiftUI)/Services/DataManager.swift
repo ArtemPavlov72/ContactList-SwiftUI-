@@ -78,5 +78,5 @@ class DataManager {
         "qojje3@mail.ru"
     ]
     
-    private init() {}  
+    private init() {}
 }
